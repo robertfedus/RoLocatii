@@ -39,6 +39,9 @@ exports.register = async (req, res, next) => {
   if (!validator.validate(req.body.email))
     return fail(res, 400, 'Te rog sa introduci un email valid.');
 
+  if (req.body.name.includes('</script>'))
+    return fail(res, 403, 'Te rog să nu introduci cod în nume.');
+
   try {
     const user = await User.findOne({ email: req.body.email });
     if (user)
