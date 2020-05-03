@@ -1,0 +1,119 @@
+.location-page {
+  padding: 2em;
+}
+
+.location-page iframe {
+  width: 100%;
+}
+
+.location-page .page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.location-page .page-content .top {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.location-page .google-map-wrapper {
+  width: 50%;
+}
+
+.location-page .info-wrapper {
+  width: 50%;
+  z-index: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.location-page .info-wrapper .section {
+  margin: 1.2em 0px 1.2em 0px;
+}
+
+.location-page .info-wrapper .section .left {
+  color: #3b38ff;
+  font-size: 18px;
+  margin-right: 0.4em;
+}
+
+.location-page .info-wrapper .section h2 {
+  color: #ff5752;
+  font-family: 'Calibre Thin', Arial, Helvetica, sans-serif;
+  display: inline;
+}
+
+.location-page .bottom {
+  margin-top: 6em;
+  width: 100%;
+}
+
+.location-page .bottom .reviews {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.location-page .bottom .reviews .rolocatii,
+.location-page .bottom .reviews .google {
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em;
+  border-radius: 8px;
+  height: 13em;
+  /* width: 23em; */
+  max-width: 40em;
+  overflow: scroll;
+}
+
+.location-page .bottom .reviews .title {
+  color: #3b38ff;
+  width: 100%;
+  border-bottom: 1px solid rgb(168, 168, 168);
+  display: block;
+  margin-bottom: 0.4em;
+}
+
+.location-page .bottom .reviews .title span {
+  color: #ff5752;
+}
+
+.rating-icon {
+  color: rgb(235, 203, 22);
+}
+
+@media (max-width: 1100px) {
+  .location-page .bottom .reviews {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .location-page .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location-page .google-map-wrapper {
+    display: none;
+  }
+
+  .location-page .reviews .rolocatii {
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-page .bottom .reviews .rolocatii,
+  .location-page .bottom .reviews .google {
+    transform: scale(0.8);
+  }
+
+  .location-page .reviews .rolocatii {
+    margin-bottom: 0.8em;
+  }
+}

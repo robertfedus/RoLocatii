@@ -1,0 +1,10 @@
+.map-svg path {
+  cursor: pointer;
+  stroke: #3b38ff;
+  fill: #fff;
+  z-index: 1;
+}
+
+.map-svg path:hover {
+  fill: #ff5752;
+}

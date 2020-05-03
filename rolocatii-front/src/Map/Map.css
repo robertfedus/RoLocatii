@@ -1,0 +1,149 @@
+.map-section {
+  background: white;
+  border-radius: 10px;
+}
+
+.map-section .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.map-section .top .map-wrapper {
+  max-height: 35em;
+  max-width: 35em;
+  width: 100%;
+}
+.locations-wrapper {
+  width: 17em;
+  text-align: center;
+  align-self: flex-start;
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.locations {
+  height: 22em;
+  overflow: auto;
+}
+
+.locations .location {
+  background: white;
+  margin: 0.5em 0px 0.5em 0px;
+  border-radius: 8px;
+}
+
+.locations .location .label {
+  margin-bottom: 0.2em;
+  font-family: 'Calibre Regular';
+  width: 50%;
+  text-align: left;
+}
+
+.locations .location .label .name-icon {
+  color: #3b38ff;
+}
+
+.locations .location .label .rating-icon {
+  color: rgb(207, 177, 7);
+}
+
+.locations .location .label .adress-icon {
+  color: #ff5752;
+}
+
+.locations .section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+  width: 100%;
+}
+
+.locations .location p {
+  margin-left: 0.5em;
+  width: 50%;
+}
+.locations .details-section {
+  justify-content: center !important;
+}
+
+.locations .section .details {
+  color: #ff5752;
+  cursor: pointer;
+}
+
+.map-options {
+  display: flex;
+}
+
+.type-card {
+  background: #f0f0f0;
+  display: inline-block;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1em;
+}
+
+.map-options select {
+  outline: none;
+  border: 1px solid #ff5752;
+  border-radius: 8px;
+  /* background: #ff5752; */
+  text-align: center;
+  height: 2.5em;
+  cursor: pointer;
+}
+
+.map-options select:hover {
+  background: #ff5752;
+}
+
+@media (max-width: 660px) {
+  .map-options {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .map-wrapper {
+    max-height: auto;
+    max-width: auto;
+    margin: 0 auto;
+  }
+
+  .type-card {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 1180px) {
+  .map-section {
+  }
+  .map-section .top {
+    /* flex-direction: column;
+    align-items: center; */
+    display: block;
+    margin: 0 auto;
+  }
+
+  .map-section .locations-wrapper,
+  .map-section .map-wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .locations-wrapper {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 450px) {
+  .map-section .top .locations-wrapper {
+    max-width: 14em;
+  }
+}
