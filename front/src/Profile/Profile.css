@@ -1,0 +1,88 @@
+.profile-page {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-page .top {
+  width: 50%;
+}
+
+.profile-page .profile-pic {
+  height: 15em;
+  margin-right: 3em;
+}
+
+.profile-page .personal-details {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 8px;
+  padding: 3em;
+  padding-bottom: 1.5em;
+}
+
+.profile-page .profile-picture {
+  align-self: center;
+}
+
+.profile-page .personal-details img {
+  height: 6em;
+}
+
+.profile-page .personal-details .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profile-page .personal-details .section h2 {
+  color: #ff5752;
+  font-family: 'Calibre Thin';
+  margin-bottom: 0.5em;
+}
+
+.profile-page .personal-details .section .left {
+  color: #3b38ff;
+  font-size: 18px;
+}
+
+.profile-page .personal-details .delete {
+  color: #ff5752;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.profile-page .locations-wrapper {
+  height: 15em;
+  overflow: auto;
+  width: 100%;
+  max-width: 35em;
+  margin-top: 2em;
+}
+
+.profile-page .locations-wrapper h3 {
+  color: #3b38ff;
+  font-size: 24px;
+  font-family: 'Calibre Thin';
+}
+
+@media (max-width: 710px) {
+  .profile-page .top {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .profile-page .personal-details {
+    margin-left: 0;
+  }
+
+  .profile-page .profile-pic {
+    margin-right: 0;
+  }
+}

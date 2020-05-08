@@ -1,0 +1,14 @@
+.autocomplete-dropdown-container {
+  right: 0;
+  max-width: 200px;
+  max-height: 3em;
+  z-index: 2;
+}
+
+.location-search-input {
+  margin-top: 0;
+}
+
+.searchbar .active {
+  margin-top: 3em;
+}
